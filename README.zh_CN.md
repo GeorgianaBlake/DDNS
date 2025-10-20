@@ -10,7 +10,18 @@
 
 ## 安装方法
 
+**安装依赖**
+
+脚本依赖 curl、wget 包, 执行安装下载之前, 请预先下载, 下载方法如下:
+
+```bash
+apt install -y curl wget
+# 或
+yum install -y curl wget
+```
+
 一键安装(推荐)
+
 ```bash
 bash <(curl -fsSL https://raw.githubusercontent.com/GeorgianaBlake/DDNS/main/cf-ddns.sh) --init
 ```
