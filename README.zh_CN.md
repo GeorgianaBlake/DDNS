@@ -10,7 +10,7 @@
 
 ## 使用方法
 
-**安装依赖**
+**1.安装依赖**
 
 脚本依赖 curl、wget 包, 执行安装下载之前, 请预先下载, 下载方法如下:
 
@@ -21,13 +21,13 @@ apt install -y curl wget
 # CentOS/Rocky/AlmaLinux 系统
 yum install -y curl wget
 ```
-**下载脚本**
+**2.下载脚本**
 
 ```bash
 wget https://raw.githubusercontent.com/GeorgianaBlake/DDNS/main/cf-ddns.sh -O /usr/local/bin/cf-ddns.sh && chmod +x /usr/local/bin/cf-ddns.sh
 ```
 
-**初始化**
+**3.初始化**
 
 ```bash
 sudo /usr/local/bin/cf-ddns.sh --lang=zh_CN --init
@@ -48,7 +48,7 @@ sudo /usr/local/bin/cf-ddns.sh --lang=zh_CN --init
 /etc/GB_DDNS/config.json
 ```
 
-**手动运行更新**
+**4.手动运行更新**
 
 ```bash
 sudo ./cf-ddns.sh --run
@@ -61,7 +61,7 @@ sudo ./cf-ddns.sh --run
 [SUCCESS] example.com A 记录已更新至 1.2.3.4
 ```
 
-**定时任务设置（自动更新）**
+**5.定时任务设置（自动更新）**
 
 推荐使用 crontab 每分钟检测一次：
 
