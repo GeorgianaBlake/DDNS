@@ -1,6 +1,6 @@
 # Cloudflare DDNS Auto Update Script
 
-> A pure Bash implementation of a Cloudflare Dynamic DNS (DDNS) script that supports automatic IPv4 / IPv6 detection and synchronization. It includes multilingual support (Simplified Chinese, Traditional Chinese, English, Spanish, Russian, Persian) and automatic timezone matching, compatible with mainstream Linux distributions.
+> A pure Bash implementation of a Cloudflare Dynamic DNS (DDNS) script that supports automatic IPv4 / IPv6 detection and synchronization. It includes multilingual support ([Simplified Chinese](https://github.com/GeorgianaBlake/DDNS/blob/main/README.zh_CN.md), Traditional Chinese, English, Spanish, Russian, Persian) and automatic timezone matching, compatible with mainstream Linux distributions.
 
 ## Features
 
