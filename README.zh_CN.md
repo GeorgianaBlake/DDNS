@@ -91,7 +91,8 @@ sudo crontab -e
 添加以下行：
 
 ```bash
-*/1 * * * * /usr/local/bin/cf-ddns.sh --run >> /etc/GB_DDNS/logs/ddns.log 2>&1
+*/1 * * * * /usr/local/bin/cf-ddns.sh --run >> /etc/GB_DDNS/logs/cron.log 2>&1
+*/30 * * * * tail -c 1M /etc/GB_DDNS/logs/cron.log > /etc/GB_DDNS/logs/cron.tmp && mv /etc/GB_DDNS/logs/cron.tmp /etc/GB_DDNS/logs/cron.log
 ```
 
 ## 文件结构
