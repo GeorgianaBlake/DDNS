@@ -51,7 +51,7 @@ sudo /usr/local/bin/cf-ddns.sh --lang=zh_CN --init
 **4.手动运行更新**
 
 ```bash
-sudo ./cf-ddns.sh --run
+sudo /usr/local/bin/cf-ddns.sh --run
 ```
 
 示例输出：
@@ -80,7 +80,7 @@ sudo crontab -e
 如果需要查看详细执行日志，可启用 Debug 模式：
 
 ```bash
-./cf-ddns.sh --debug=1 --run
+/usr/local/bin/cf-ddns.sh --debug=1 --run
 ```
 
 日志路径：
@@ -94,7 +94,7 @@ sudo crontab -e
 如果需要重新配置：
 
 ```bash
-./cf-ddns.sh --rest
+/usr/local/bin/cf-ddns.sh --rest
 ```
 
 系统会提示：
