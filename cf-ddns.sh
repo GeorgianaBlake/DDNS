@@ -376,7 +376,7 @@ run_script() {
 
   ok="$(echo "${upd:-}" | jq -r '.success' 2>/dev/null || echo false)"
   if [[ "$ok" == "true" ]]; then
-    succss "$(t gb_written): ${CF_DOMAIN_NAME} ${CF_RECORD_TYPE} -> ${NEW_IP} (proxied=${CF_PROXIED}, ttl=${CF_TTL})"
+    success "$(t gb_written): ${CF_DOMAIN_NAME} ${CF_RECORD_TYPE} -> ${NEW_IP} (proxied=${CF_PROXIED}, ttl=${CF_TTL})"
     write_log "$(t gb_written): ${CF_DOMAIN_NAME} ${CF_RECORD_TYPE} -> ${NEW_IP} (proxied=${CF_PROXIED}, ttl=${CF_TTL})"
     exit 0
   else
